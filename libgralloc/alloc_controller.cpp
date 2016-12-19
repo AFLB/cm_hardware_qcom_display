@@ -456,8 +456,6 @@ int getYUVPlaneInfo(private_handle_t* hnd, struct android_ycbcr* ycbcr)
             ycbcr->chroma_step = 2;
             break;
         //Unsupported formats
-        case HAL_PIXEL_FORMAT_YCbCr_422_I:
-        case HAL_PIXEL_FORMAT_YCrCb_422_I:
         case HAL_PIXEL_FORMAT_YCbCr_420_SP_TILED:
         default:
         ALOGD("%s: Invalid format passed: 0x%x", __FUNCTION__,
